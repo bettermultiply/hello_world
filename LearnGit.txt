@@ -1,0 +1,15 @@
+It's my First Git learnpaper
+
+git init //初始化仓库
+git add filename //添加文件
+git commit -m "changes have been done" //进行的改变
+git status //查询状态，是否保存注释等
+git diff //未保存时查看修改内容
+git reset --hard HEAD~num //回滚
+git reset --hard commit id //自动寻找
+git reflog //查看每一次命令
+git log //查看版本库
+
+
+cat filename //查看文件内容
+
