@@ -1,15 +1,23 @@
 It's my First Git learnpaper
 
 git init //初始化仓库
-git add filename //添加文件
-git commit -m "changes have been done" //进行的改变
+git add filename //将工作区修改置入暂存区
+git commit -m "changes have been done" //将暂存区的修改提交入库
 git status //查询状态，是否保存注释等
 git diff //未保存时查看修改内容
+git diff HEAD -- filename //查看工作区和版本库内最新版本的区别
 git reset --hard HEAD~num //回滚
 git reset --hard commit id //自动寻找
+git reset HEAD filename //将暂存区的修改回退到工作区
 git reflog //查看每一次命令
 git log //查看版本库
-
+git checkout -- filename //将文件回到最近一次git commit 或 git add 的状态
+git rm // 用于删除一个版本库内文件
+git remote -v //This should show me all of the push / fetch remotes for the project.
+git remote add origin ssh://git@example.com//本地关联我的远程库
+git remote remove origin // 移除远程库
+git push -u origin master //把主干的所有内容推送到远程库
+可分为工作区，版本库(.git), 暂存区(Stage)
 
 cat filename //查看文件内容
 
