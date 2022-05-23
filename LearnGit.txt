@@ -16,7 +16,8 @@ git rm // 用于删除一个版本库内文件
 git remote -v //This should show me all of the push / fetch remotes for the project.
 git remote add origin ssh://git@example.com//本地关联我的远程库
 git remote remove origin // 移除远程库
-git push -u origin master //把主干的所有内容推送到远程库
+git push origin master //把主干的所有内容推送到远程库
+git push -u origin master //则重新建立主干
 可分为工作区，版本库(.git), 暂存区(Stage)
 
 cat filename //查看文件内容
