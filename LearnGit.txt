@@ -26,6 +26,7 @@ git --delete branchname // 删除本地分支
 cat filename //查看文件内容
 
 
+
 将两个不相关的分支合并：
 1、先将两个分支均保存到本地 git clone respository-url
 切换到预备成为主支的分支  git checkout branchname
