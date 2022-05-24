@@ -16,9 +16,19 @@ git rm // 用于删除一个版本库内文件
 git remote -v //This should show me all of the push / fetch remotes for the project.
 git remote add origin ssh://git@example.com//本地关联我的远程库
 git remote remove origin // 移除远程库
-git push origin master //把主干的所有内容推送到远程库
-git push -u origin master //则重新建立主干
+git push -u origin master //把主干的所有内容推送到远程库
+git branch -r //查看分支列表
+git branch branchname //建立分支
+git push origin --delete branchname //删除分支 
+git --delete branchname // 删除本地分支
 可分为工作区，版本库(.git), 暂存区(Stage)
 
 cat filename //查看文件内容
 
+
+
+将两个不相关的分支合并：
+1、先将两个分支均保存到本地 git clone respository-url
+切换到预备成为主支的分支  git checkout branchname
+允许两个不想关联的分支合并  git pull origin master --allow-unrelated-histories
+最后推送到github， git push origin branchname
