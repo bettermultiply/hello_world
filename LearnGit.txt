@@ -20,7 +20,9 @@ git push -u origin master //把主干的所有内容推送到远程库
 git branch -r //查看分支列表
 git branch branchname //建立分支
 git push origin --delete branchname //删除分支 
-git --delete branchname // 删除本地分支
+git branch -d branchname // 删除本地分支
+git checkout -b branchname // 新建并切换到分支
+git merge branchname // 将一个分支合并到当前分支，分支不受影响
 可分为工作区，版本库(.git), 暂存区(Stage)
 
 cat filename //查看文件内容
