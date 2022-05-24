@@ -22,11 +22,23 @@ git branch -r //查看分支列表
 git branch branchname //建立分支
 git push origin --delete branchname //删除分支 
 git branch -d branchname // 删除本地分支
+//但分支未合并时git将会报错，分支未被合并，删除将会丢失修改
+//使用-D强制删除
 git checkout -b branchname // 新建并切换到分支
 git merge branchname // 将一个分支合并到当前分支，分支不受影响
 git switch -c branchname // 创建并切换到分支
 git switch branchname //切换到已有分支
 git log --graph //  查看分支合并图 （可选 --pretty=oneline）
+
+git stash // 存储还未commit的工作现场，等待恢复现场后继续工作
+git stash list //查看存储的工作现场
+git stash apply //恢复工作现场但不删除stash
+git stash applu stash@{0} //当保留现场指定恢复的stash, 可以使用list来查询存储的现场编号
+git stash drop // 丢弃stash
+git stash pop // 恢复现场并删除stash
+git cherry-pick id //复制特定的commit到当前分支
+
+开发新特性都该重建一个branch
 
 可分为工作区，版本库(.git), 暂存区(Stage)
 
